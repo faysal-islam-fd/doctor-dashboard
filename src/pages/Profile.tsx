@@ -7,8 +7,6 @@ import {
   Camera, 
   Phone, 
   Mail, 
-  MapPin, 
-  Calendar,
   Award,
   BookOpen,
   Clock,
@@ -95,7 +93,7 @@ const Profile: React.FC = () => {
     { label: 'Total Patients', value: dashboardStats.totalPatients.toLocaleString(), icon: Users, color: 'text-blue-600' },
     { label: 'Years Experience', value: '15+', icon: Clock, color: 'text-green-600' },
     { label: 'Patient Rating', value: currentDoctor.rating.toString(), icon: Star, color: 'text-yellow-600' },
-    { label: 'Appointments', value: dashboardStats.completedAppointments?.toLocaleString() || '5,670', icon: Activity, color: 'text-purple-600' },
+    { label: 'Appointments', value: dashboardStats.todayAppointments?.toLocaleString() || '5,670', icon: Activity, color: 'text-purple-600' },
   ];
 
   return (

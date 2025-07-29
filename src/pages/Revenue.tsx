@@ -3,21 +3,14 @@ import {
   DollarSign, 
   TrendingUp, 
   TrendingDown, 
-  Calendar, 
-  CreditCard, 
   Users, 
   Clock,
   Download,
-  Filter,
   Eye,
-  ChevronDown,
-  Banknote,
-  Wallet,
-  PiggyBank,
   Target
 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell, Area, AreaChart } from 'recharts';
-import { revenueData, mockAppointments, dashboardStats } from '../data/mockData';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Area, AreaChart } from 'recharts';
+import { dashboardStats } from '../data/mockData';
 import { format, subDays, startOfMonth, endOfMonth, eachDayOfInterval, startOfYear } from 'date-fns';
 
 const Revenue: React.FC = () => {

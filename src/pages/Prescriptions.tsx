@@ -9,17 +9,14 @@ import {
   Trash2, 
   Download,
   Calendar,
-  User,
   Pill,
-  Clock,
-  AlertCircle,
   CheckCircle,
   Copy,
   Send,
   Save,
   X
 } from 'lucide-react';
-import { mockPatients, mockAppointments } from '../data/mockData';
+import { mockPatients } from '../data/mockData';
 import { format } from 'date-fns';
 import { useModal } from '../components/Layout/DashboardLayout';
 

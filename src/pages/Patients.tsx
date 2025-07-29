@@ -4,7 +4,6 @@ import {
   Search, 
   Filter, 
   Plus, 
-  Eye, 
   Phone, 
   Mail, 
   MapPin, 

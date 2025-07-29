@@ -3,33 +3,21 @@ import {
   Settings as SettingsIcon, 
   Bell, 
   Shield, 
-  Globe, 
   Palette, 
-  Clock,
   Save,
   RefreshCw,
   Mail,
-  MessageSquare,
-  Smartphone,
   Monitor,
   Moon,
   Sun,
   Volume2,
-  VolumeX,
   Download,
   Upload,
   Trash2,
   AlertCircle,
-  CheckCircle,
-  User,
-  Calendar,
-  CreditCard,
-  Database,
-  Wifi,
-  Languages,
-  MapPin
+  Database
 } from 'lucide-react';
-import { currentDoctor } from '../data/mockData';
+
 
 const Settings: React.FC = () => {
   const [activeSection, setActiveSection] = useState<'general' | 'notifications' | 'security' | 'appearance' | 'data'>('general');

@@ -1,13 +1,18 @@
 {
   "name": "doctor-dashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Modern doctor dashboard with patient management, appointments, prescriptions, and analytics",
+  "keywords": ["doctor", "dashboard", "medical", "react", "typescript", "tailwind"],
+  "author": "Servigo",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
@@ -32,5 +37,9 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

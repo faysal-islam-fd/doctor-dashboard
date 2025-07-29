@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
 import { 
-  Activity, 
   TrendingUp, 
   TrendingDown, 
   Users, 
-  Calendar, 
-  DollarSign, 
   Clock,
   Star,
-  BarChart3,
-  PieChart,
-  LineChart,
-  Filter,
   Download,
   RefreshCw
 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart as RechartsLineChart, Line, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
-import { dashboardStats, revenueData, appointmentTrends, mockAppointments, mockPatients } from '../data/mockData';
-import { format, subDays, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart as RechartsPieChart, Pie, Cell, Area, AreaChart } from 'recharts';
+import { mockPatients } from '../data/mockData';
+import { format, subDays, eachDayOfInterval } from 'date-fns';
 
 const Analytics: React.FC = () => {
   const [timeRange, setTimeRange] = useState<'7d' | '30d' | '90d' | '1y'>('30d');
